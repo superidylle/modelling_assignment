@@ -48,11 +48,4 @@ def transfer_to_period_data(df, rule_type=' '):
 
     return period_df
 
-def calculation_p_value(df, x):
-
-    TestList = df[x].tolist()
-
-    k, p = stats.normaltest(TestList)
-
-    return p
 
